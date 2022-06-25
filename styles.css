@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #00fcfc;
+}
+#word-description {
+    text-align: center;
+    padding: 4px;
+}
+body {
+    background: #232323;
+}
+button {
+    color: #310;
+    background: #00fcfc;
+    border: none;
+    padding: 4px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 0 12px #000;
+}
+button:active {
+    background: #131313;
+    color: #00fcfc;
+    box-shadow: 0 0 12px #00fcfc;
+}
+.control-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn {
+    padding: 8px 12px;
+    margin: 24px 2px 48px;
+    width: 100px;
+}
+#contain-body {
+    text-align: center;
+    margin-top: 32px;
+}
+.opcaity-0 {opacity: 0}
+.opacity-1 {opacity: 1}
+#contain-image, #forca {
+    position: relative;
+    height: 120px;
+    margin: 0;
+}
+#contain-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    margin-top: 32px;
+}
+#forca {
+    margin-left: -150px;
+}
+#boneco {
+    position: absolute;
+    top: 22px;
+    left: 27px;
+}
+.partes{
+    width: 3px;
+    background: #ff0909;
+    position: absolute;
+    border-radius: 12px;
+    transition: all 0.3s;
+    opacity: 0;
+}
+#cabeza {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 3px solid #ff0909;
+    border-radius: 100%;
+    position: absolute;
+    transition: all 0.3s;
+    opacity: 0;
+}
+#cuerpo {
+    height: 40px;
+    top: 30px;
+    left: 13px;
+}
+#mano-derecha {
+    height: 25px;
+    top: 30px;
+    left: 22px;
+    transform: rotate(-45deg);
+}
+#mano-izquierda {
+    height: 25px;
+    top: 30px;
+    left: 4px;
+    transform: rotate(45deg);
+}
+#pie-derecho {
+    height: 25px;
+    top: 66px;
+    left: 22px;
+    transform: rotate(-45deg);
+}
+#pie-izquierdo {
+    height: 25px;
+    top: 66px;
+    left: 4px;
+    transform: rotate(45deg);
+}
+#l {
+    width: 120px;
+    height: 120px;
+    border-right: 3px solid #110802;
+    border-top: 3px solid #110802;
+    position: absolute;
+    left: 40px;
+    transition: all 0.3s;
+    opacity: 0;
+}
+#cuerda {
+    position: absolute;
+    width: 3px;
+    background: #975;
+    height: 50px;
+    transition: all 0.3s;
+    left: 40px;
+    opacity: 0;
+}
+#lose {
+    color: #ff0909;
+    padding: 12px;
+    text-align: center;
+}
+#win {
+    color: #20ac10;
+    padding: 12px;
+    text-align: center;
+}
+
+/*Container*/
+.container {
+    padding: 20px 100px;
+}
+
+.input-letter {
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    background: none;
+    margin: 0px 8px;
+    border-bottom: 3px solid #fff;
+    font-size: 22px;
+}
+
+#digit{
+    display: none;
+    padding: 8px 12px;
+    outline: none;
+    border: 1px solid #0009;
+    color: #000;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 768px){
+    #digit{display: block;}
+    .input-letter {
+        width: 15px;
+        height: 15px;
+        font-size: 18px;
+        margin: 0 2px;
+    }
+}
+footer {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 34px;
+}

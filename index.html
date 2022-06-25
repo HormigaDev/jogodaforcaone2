@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="icon" href="icon.ico">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div><h2 id="lose"></h2></div>
+    <div><h2 id="win"></h2></div>
+    <div class="container grid-2">
+        <div id="contain-image">
+            <div id="forca">
+                <div id="boneco">
+                    <div id="cabeza"></div>
+                    <div id="cuerpo" class="partes"></div>
+                    <div id="mano-derecha" class="partes"></div>
+                    <div id="mano-izquierda" class="partes"></div>
+                    <div id="pie-derecho" class="partes"></div>
+                    <div id="pie-izquierdo" class="partes"></div>
+                </div>
+                <div id="cuerda"></div>
+                <div id="l"></div>
+            </div>
+        </div>
+        <div id="innerWord"></div>
+        <div id="contain-body"></div>
+    </div>
+    <div class="container game-control">
+        <div class="control-group">
+            <input type="text" id="digit" placeholder="digite uma letra">
+        </div>
+        <div class="control-group">
+            <button type="button" class="btn btn-primary" id="start" onclick="start()">Start</button>
+            <button type="button" class="btn btn-secondary" id="restart" onclick="restartAll()">Restart</button>
+            <button type="button" class="btn" id="nextGame" onclick="nextGame()">Next <i class="fa fa-arrow-right" style="color: #000;"></i></button>
+        </div>
+        <div class="states">
+            <span>Puntos: <b id="points">0</b></span><br>
+            <span>Erros: <b id="words-err">0</b></span><br><br>
+            <span>Palavras acertadas: <b id="words-accert">0</b></span><br>
+        </div>
+    </div>
+
+    <footer>
+        <strong>&copy; Jesse's Code - Site desenvolvido por Isaí Gabriel Medina Pereira - Alura-ONE</strong>
+    </footer>
+    <script src="js/words.dictionary.js"></script>
+    <script src="js/canva.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
